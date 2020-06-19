@@ -1,10 +1,3 @@
-/* color: #212121; - основной чорный 
-    color: #757575; - вторичный чорный
-    color: #FFFFFF; - основной белый
-    color: rgba(255, 255, 255, 0.6); - вторичный белый 
-    background: #F5F4FA; - фон окна
-    color: #2196F3; - ховер ефект
-    - */
 /* ---глобальные селекторы---- */
 html {
   box-sizing: border-box;
@@ -82,6 +75,17 @@ ul {
 .header-nav-link:focus {
   color: var(--hover-color);
 }
+.icon-header-mail {
+  width: 16px;
+  height: 11px;
+}
+.icon-header-smartphone {
+  width: 10px;
+  height: 15px;
+}
+.header-nav-adress:hover {
+  --color5: #2196f3;
+}
 /* Селекторы адреса */
 .header-nav-adress {
   font-style: normal;
@@ -108,9 +112,7 @@ ul {
   width: 231px;
   margin-top: 9px;
 }
-.footer-social-link {
-  width: 206px;
-}
+
 .footer-titles {
   font-style: normal;
   font-weight: 700;
@@ -118,6 +120,9 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color-white);
+}
+.logo-footer {
+  --color4: #ffffff;
 }
 /* Контакты и адреса */
 .footer-adress-link {
@@ -139,6 +144,20 @@ ul {
 }
 .footer-social-pages li + li {
   margin-left: 10px;
+}
+.footer-social-link-container {
+  width: 206px;
+}
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+.footer-social-link:hover {
+  background-color: #2196f3;
+  border-radius: 50px;
+  --color2: #ffffff;
 }
 .footer-copyright {
   margin-bottom: 0;
@@ -167,11 +186,20 @@ ul {
 /*  services hero селеткторы*/
 /* Селекторы секции заказа услуг */
 .services-hero {
+  min-width: 1600px;
   height: 600px;
   padding-top: 200px;
-
   text-align: center;
-  background-color: #96969652; /* временный цвет для удобства */
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .services-text-hero {
@@ -210,6 +238,29 @@ ul {
 .feature li + li {
   margin-left: 30px;
 }
+.feature li::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+  background-color: var(--sub-main-color-white);
+}
+.antena-img::before {
+  background-image: url(../images/antena.svg);
+}
+.clock-img::before {
+  background-image: url(..//images/clock.svg);
+}
+.diagram-img::before {
+  background-image: url(..//images/diagram.svg);
+}
+.container-img::before {
+  background-image: url(..//images/astronaunt.svg);
+}
 .feature-title {
   margin-bottom: 10px;
 
@@ -224,14 +275,7 @@ ul {
   line-height: 1.7;
   color: var(--sub-main-color-black);
 }
-.container-img {
-  display: block;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  border-radius: 4px;
-  text-align: center;
-  background-color: var(--sub-main-color-white);
-}
+
 /* Селекторы секции чем мы занимаемся */
 .what-are-we-doing {
   padding-top: 95px;
@@ -267,6 +311,7 @@ ul {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
 }
 .our-team li {
   width: 270px;
@@ -293,10 +338,25 @@ ul {
   text-align: center;
   color: var(--sub-main-color-black);
 }
-.social-link {
-  text-align: center;
+.social-link-box {
+  display: flex;
+  justify-content: center;
 }
-.social-link a + a {
+.social-link-box a {
+  padding: 0;
+  border: none;
+}
+.social-link {
+  width: 40px;
+  height: 40px;
+}
+.social-link:hover {
+  background-color: #2196f3;
+  border-radius: 50px;
+  --color2: #ffffff;
+}
+
+.social-link-box a + a {
   margin-left: 10px;
 }
 /* постоянные клиенты */
@@ -310,6 +370,15 @@ ul {
 .our-clients li + li {
   margin-left: 30px;
 }
+.our-clients-label {
+  width: 170px;
+  height: 80px;
+  border: 1px solid #afb1b8;
+}
+.our-clients-label:hover {
+  --color2: #2196f3;
+  border: 1px solid #2196f3;
+}
 /* ----Селекторы страницы portfolio.html---- */
 .portfolio-box {
   padding-top: 93px;
@@ -320,6 +389,10 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 52px;
+}
+.portfolio li:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .filters-flex li + li {
   margin-left: 8px;
@@ -337,6 +410,8 @@ ul {
 .filters-button:focus {
   background-color: var(--hover-color);
   color: var(--main-color-white);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   border: none;
 }

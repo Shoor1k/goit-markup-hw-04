@@ -14,10 +14,13 @@
 
   <body>
     <!-- Навигация сайта -->
-    <header>
-      <nav class="container flex-header">
-        <a href="#" class="logo-header">
-          <img src="images/logo.svg" alt="Web Studio" width="150" height="30" />
+  <header>
+    <div class="container">
+      <nav class="flex-header">
+        <a href="#">
+          <svg class="logo-header" width="153" height="31">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
         </a>
         <ul class="flex-header">
           <li class="list-item">
@@ -32,14 +35,20 @@
         </ul>
         <address class="header-address">
           <a href="mailto:info@devstudio.com" class="header-nav-adress">
+            <svg class="icon-header-mail">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
             info@devstudio.com
           </a>
-          <a href="tel:+80961111111" class="header-nav-adress">
+          <a href="tel:+80961111111" class="header-nav-adress"><svg class="icon-header-smartphone">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
             +80961111111
           </a>
         </address>
       </nav>
-    </header>
+    </div>
+  </header>
     <main>
       <section class="container portfolio-box">
         <h1 class="hide-item">Портфолио студии</h1>
@@ -222,116 +231,76 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <!-- Контакты, адреса -->
-      <section>
-        <div class="container footer-box">
-          <div class="footer-contacts">
-            <h2 class="hide-item">Контакты, адреса, рассылка</h2>
-            <a href="#">
-              <img
-                src="images/logo2.svg"
-                alt="Web Studio"
-                width="150"
-                height="30"
-              />
-            </a>
-            <address>
-              <ul>
-                <li class="item">
-                  <a
-                    href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjTxvzg49PpAhVElosKHf4JD2gQ8gEwAHoECAsQAQ"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    class="footer-adress-map"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="item">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="footer-adress-link"
-                  >
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="tel:+80961111111" class="footer-adress-link item">
-                    +80961111111</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-          <!-- Социальные сети -->
-          <div class="footer-social-link">
-            <p class="footer-titles">присоединяйтесь</p>
-            <ul class="footer-social-pages">
-              <li>
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                >
-                  <img
-                    src="images/instagram2.svg"
-                    alt="instagram"
-                    width="44"
-                    height="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                >
-                  <img
-                    src="images/twitter2.svg"
-                    alt="twitter"
-                    width="44"
-                    height="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                >
-                  <img
-                    src="images/facebook2.svg"
-                    alt="facebook"
-                    width="44"
-                    height="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                >
-                  <img
-                    src="images/linkedin2.svg"
-                    alt="linkedin"
-                    width="44"
-                    height="44"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- рассылка -->
-          <div class="mailing">
-            <p class="footer-titles">Подпишитесь на рассылку</p>
-          </div>
-        </div>
-      </section>
-      <p class="footer-copyright">2020 | Developed by GoIT Students</p>
-    </footer>
+        <footer>
+          <!-- Контакты, адреса -->
+          <section>
+            <div class="container footer-box">
+              <div class="footer-contacts">
+                <h2 class="hide-item">Контакты, адреса, рассылка</h2>
+                <a href="#">
+                  <svg class="logo-footer" width="153" height="31">
+                    <use href="./images/symbol-defs.svg#icon-logo"></use>
+                  </svg>
+                  <address>
+                    <ul>
+                      <li class="item">
+                        <a href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjTxvzg49PpAhVElosKHf4JD2gQ8gEwAHoECAsQAQ"
+                          target="_blank" rel="noopener nofollow noreferrer" class="footer-adress-map">г. Киев, пр-т Леси
+                          Украинки, 26</a>
+                      </li>
+                      <li class="item">
+                        <a href="mailto:info@devstudio.com" class="footer-adress-link">
+                          info@devstudio.com
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="tel:+80961111111" class="footer-adress-link item">
+                          +80961111111</a>
+                      </li>
+                    </ul>
+                  </address>
+              </div>
+              <!-- Социальные сети -->
+              <div class="footer-social-link-container">
+                <p class="footer-titles">присоединяйтесь</p>
+                <ul class="footer-social-pages">
+                  <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
+                      <svg class="footer-social-link">
+                        <use href="./images/symbol-defs.svg#icon-instagram1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener nofollow noreferrer">
+                      <svg class="footer-social-link">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener nofollow noreferrer">
+                      <svg class="footer-social-link">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener nofollow noreferrer">
+                      <svg class="footer-social-link">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- рассылка -->
+              <div class="mailing">
+                <p class="footer-titles">Подпишитесь на рассылку</p>
+              </div>
+            </div>
+          </section>
+          <p class="footer-copyright">2020 | Developed by GoIT Students</p>
+        </footer>
   </body>
 </html>
