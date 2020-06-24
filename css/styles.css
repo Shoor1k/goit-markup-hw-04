@@ -51,15 +51,18 @@ ul {
   align-items: center;
   height: 81px;
 }
-.flex-header address {
-  margin-left: auto;
-}
+
 .flex-header ul {
   margin-left: 85px;
   padding: 0;
 }
 .flex-header li:not(:first-child) {
   margin-left: 50px;
+}
+.header-address {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
 }
 .header-address a:not(:first-child) {
   margin-left: 30px;
@@ -76,12 +79,14 @@ ul {
   color: var(--hover-color);
 }
 .icon-header-mail {
+  margin-right: 10px;
   width: 16px;
-  height: 11px;
+  height: 12px;
 }
 .icon-header-smartphone {
-  width: 10px;
-  height: 15px;
+  margin-right: 10px;
+  width: 12px;
+  height: 16px;
 }
 .header-nav-adress:hover {
   --color5: #2196f3;
@@ -142,21 +147,29 @@ ul {
   display: flex;
   margin-top: 20px;
 }
-.footer-social-pages li + li {
+.footer-social-pages a + a {
   margin-left: 10px;
 }
 .footer-social-link-container {
   width: 206px;
 }
-.footer-social-link {
-  width: 40px;
-  height: 40px;
+.footer-social-pages a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
 }
-.footer-social-link:hover {
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+}
+.footer-social-pages a:hover {
   background-color: #2196f3;
-  border-radius: 50px;
   --color2: #ffffff;
 }
 .footer-copyright {
@@ -186,7 +199,7 @@ ul {
 /*  services hero селеткторы*/
 /* Селекторы секции заказа услуг */
 .services-hero {
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   padding-top: 200px;
   text-align: center;
@@ -341,19 +354,26 @@ ul {
 .social-link-box {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .social-link-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   border: none;
+  width: 44px;
+  height: 44px;
+}
+.social-link-box a:hover {
+  background-color: #2196f3;
+  border-radius: 50px;
+  --color2: #ffffff;
 }
 .social-link {
   width: 40px;
   height: 40px;
-}
-.social-link:hover {
-  background-color: #2196f3;
-  border-radius: 50px;
-  --color2: #ffffff;
 }
 
 .social-link-box a + a {
@@ -366,19 +386,29 @@ ul {
 }
 .our-clients ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .our-clients li + li {
   margin-left: 30px;
 }
+.our-clients-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+}
+
+.our-clients-list a:hover {
+  border: 1px solid #2196f3;
+  --color2: #2196f3;
+}
+
 .our-clients-label {
   width: 170px;
   height: 80px;
-  border: 1px solid #afb1b8;
 }
-.our-clients-label:hover {
-  --color2: #2196f3;
-  border: 1px solid #2196f3;
-}
+
 /* ----Селекторы страницы portfolio.html---- */
 .portfolio-box {
   padding-top: 93px;
